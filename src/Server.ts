@@ -19,7 +19,9 @@ export default class Server {
             this.respond();
         }).listen(8080);
     }
-
+    /**
+     * 
+     */
     private respond() {
         const url = this.incomingMessage.url;
         switch (url) {
